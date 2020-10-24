@@ -15,7 +15,7 @@ func Palindrome(start int, end int) int {
 	result := 0
 
 	for i := start; i < end; i++ {
-		if helper(i) {
+		if reverseValue(i) {
 			result++
 		}
 	}
@@ -23,7 +23,7 @@ func Palindrome(start int, end int) int {
 	return result
 }
 
-func helper(x int) bool {
+func reverseValue(x int) bool {
 	temp := strconv.Itoa(x)
 	reversed := ""
 
