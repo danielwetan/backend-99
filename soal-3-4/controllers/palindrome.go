@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/danielwetan/backend-99/helpers"
+	"github.com/danielwetan/backend-99/soal-3-4/helpers"
 )
 
 func Palindrome(w http.ResponseWriter, r *http.Request) {

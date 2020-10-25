@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"github.com/danielwetan/backend-99/routes"
+
+	"github.com/danielwetan/backend-99/soal-3-4/routes"
 )
 
 func main() {
