@@ -17,7 +17,24 @@ func Solution(input string) string {
 	final := checkIfBookDoubled(sort)
 	return arrayToString(final)
 }
-x
+
+func stringToArray(str string) []string {
+	result := strings.Fields(str)
+	return result
+}
+
+func arrayToString(arr []string) string {
+	var result, temp string
+	for i := 0; i < len(arr); i++ {
+		if arr[i] == arr[len(arr)-1] {
+			temp = arr[i]
+		} else {
+			temp = arr[i] + " "
+		}
+		result += temp
+	}
+	return result
+}
 
 func addPointToData(arr []string) []string {
 	for i := 0; i < len(arr); i++ {
